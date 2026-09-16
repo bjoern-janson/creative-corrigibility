@@ -1,0 +1,47 @@
+{
+  "adversarial_red": {
+    "commit": "33314643ee917b8f83cddbaaea922be0e5acb7cc",
+    "finding": "event label could contradict state-transition semantics before measurer hardening",
+    "run_id": 35115883788
+  },
+  "apparatus_parent_commit": "39e9919b23576bd0903960bb79aafdedc119eef5",
+  "calibration_result": {
+    "commit": "39e9919b23576bd0903960bb79aafdedc119eef5",
+    "python": "3.12.14",
+    "run_id": 35115983530,
+    "status": "PASS",
+    "tests": 17
+  },
+  "correction_horizon": 3,
+  "cube_coverage": "16/16",
+  "custody_epoch": 1,
+  "freeze_id": "CC-V0-EPOCH-001",
+  "frozen_files": {
+    ".github/workflows/ci.yml": "f6e147720cc7b0d04cd9363cdad32a758c248da30450c2c1de8ffaa33e0f7567",
+    "docs/preregistration/CREATIVE_CORRIGIBILITY_V0.md": "403d81f26c7ec56a65db47fc7555c11d8bd296f6a7bed2aff8af306f2b959064",
+    "src/creative_corrigibility/__init__.py": "5cfc08aab0fad2b7ce90105e93df7dec56d70dbdc078c520eb2879250525b9c7",
+    "src/creative_corrigibility/calibration.py": "0a66318ceaf15c345ad9742e6f1a2b87a38e3b2085595accd79b24ee699933c5",
+    "src/creative_corrigibility/custody.py": "05dea639effa5cd71ea089383d5a8a856199b5877c606188545a916349dd10ce",
+    "src/creative_corrigibility/engine.py": "dd1b45554a4e71064899d53a87d2973c95841ec30c820febd7313e891c3635eb",
+    "src/creative_corrigibility/measurement.py": "68039afc52ccae00dc34353f186216a01e1ad0b14281f5e2575ba410c861c482",
+    "src/creative_corrigibility/model.py": "8c50d1c7cf4a5affca3f6b56c7fc384a9b3c84fc817e5a7f7afbcfc7e9217d97",
+    "tests/test_architecture.py": "dc004e4db4eceb13aec9b8a4b86f3015917a11cd179bc1761f5cbd7b5a7f8c11",
+    "tests/test_calibration_signatures.py": "22c5df89c8ccdcdbcb0569068294e7f86795bcfd4c5a64f7c7ff76e315773e5b",
+    "tests/test_custody_freeze.py": "ad0707b94a970d466d8ceea41ff297163fdc8e2bc34eb9dcb307bead5d6e98cf",
+    "tests/test_exhaustive_finite_validation.py": "bb0877c049e2d8b4b362acfa5ea3a5deaa1d6e97284126d2dcbdfb83be31002c",
+    "tests/test_measurement_contract.py": "ff5abb1703e397331cc53b7b94895f5702ec94a8840be42373b9c0a9bf495841",
+    "tests/test_semantic_isolation.py": "5c54ebaf737f2808d7d841d85d49618a989c808ea1d7c839ff24d760d691dc65"
+  },
+  "invalidation_rule": "Any content change to a frozen file invalidates this custody epoch and requires reopen, recalibration, and refreeze before new prospective interpretation.",
+  "prospective_rule": "Prospective mechanism code may be added outside frozen_files but may not mutate or runtime-rewrite any frozen artifact.",
+  "reinterpretation_rule": "A prospective trace produced under this freeze epoch must not be reinterpreted under a later freeze epoch as evidence for the original preregistered experiment.",
+  "schema": "creative-corrigibility/freeze-manifest/v0",
+  "signature": {
+    "identity_binding": "none; signature attests integrity of this freeze payload, not human identity",
+    "key_role": "ephemeral apparatus-custody signing key",
+    "public_key_path": "custody/FREEZE_V0.pub.pem",
+    "scheme": "ECDSA-P256-SHA256",
+    "signature_path": "custody/FREEZE_V0.sig.b64"
+  },
+  "status": "FROZEN_APPARATUS"
+}
